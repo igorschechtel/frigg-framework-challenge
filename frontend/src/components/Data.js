@@ -4,6 +4,7 @@ import { Table } from 'react-bootstrap';
 import API from '../api/api';
 import { setAuthToken } from '../actions/auth';
 import { logoutUser } from '../actions/logout';
+import withParams from '../utils/withParams';
 
 // Render sample data (objects of any type) into a data table.
 // Use first row's object keys as headers.
@@ -72,4 +73,4 @@ function mapStateToProps({ auth }) {
 }
 
 // connects this component to the redux store.
-export default connect(mapStateToProps)(Data);
+export default connect(mapStateToProps)(withParams(Data));

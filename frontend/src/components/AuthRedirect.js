@@ -4,6 +4,7 @@ import { redirect } from 'react-router-dom';
 import qString from 'query-string';
 import { setAuthToken } from '../actions/auth';
 import API from '../api/api';
+import withParams from '../utils/withParams';
 
 // handle the redirect that comes back from authing to Scrive or Hubspot.
 class RedirectFromAuth extends Component {
@@ -70,4 +71,4 @@ function mapStateToProps({ auth }) {
 }
 
 // connects this component to the redux store.
-export default connect(mapStateToProps)(RedirectFromAuth);
+export default connect(mapStateToProps)(withParams(RedirectFromAuth));
