@@ -40,7 +40,7 @@ class HubSpotIntegration extends IntegrationBase {
      * ALL CUSTOM/OPTIONAL METHODS FOR AN INTEGRATION MANAGER
      */
     async getSampleData() {
-        const res = await this.target.api.searchDeals()
+        const res = await this.target.api.listCompanies()
         console.log(res.results.length)
         const formatted = res.results.map(deal => {
             const formattedDeal = {
