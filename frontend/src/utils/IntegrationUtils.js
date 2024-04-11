@@ -12,22 +12,10 @@ export default class IntegrationUtils {
 		this.integrations = integrations;
 	}
 
-	//
 	// return a list of objects containing data related to the possible
 	// new integrations you may connect
 	getPossibleIntegrations() {
-		const options = this.integrations[ENTITIES][OPTIONS];
-
-		// exclude the primary
-		const possibleOptions = [];
-		options.forEach((opt) => {
-			if (opt.type !== this.getPrimaryType()) {
-				// opt.connected = false;
-				possibleOptions.push(opt);
-			}
-		});
-
-		return possibleOptions;
+		return this.integrations[ENTITIES][OPTIONS];
 	}
 
 	//

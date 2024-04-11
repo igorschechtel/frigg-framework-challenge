@@ -1,11 +1,10 @@
 # Phase One
 
-### Steps
-- [x] Open your terminal and cd to a location you want to install your Frigg application
-- [x] Run npx create-frigg-app {{enter-your-desired-app-name}}
-- [x] Follow the README instructions
-- [x] Start the application
-- [x] Run the Get Sample Data menu option after connecting to HubSpot
+> - [x] Open your terminal and cd to a location you want to install your Frigg application
+> - [x] Run npx create-frigg-app {{enter-your-desired-app-name}}
+> - [x] Follow the README instructions
+> - [x] Start the application
+> - [x] Run the Get Sample Data menu option after connecting to HubSpot
 
 ### Questions
 
@@ -27,8 +26,22 @@ There were some bumps in the road to make everything work:
 
 # Phase Two
 
-### Steps
-- [x] Change the HubSpot integration so that it’s grabbing and displaying different data from the HubSpot API.
+> - [x] Change the HubSpot integration so that it’s grabbing and displaying different data from the HubSpot API.
 
 ### Video
 - [Loom video](https://www.loom.com/share/e4f93b8ccc4b464fbd1c500b79b41504?sid=7a3f5af8-c18d-409e-8c12-0591912ff886) demonstrating my change on the HubSpot sample data
+
+# Phase Three
+
+> - [x] The challenge is to see if you can get an API module working, and live sample data retrieved from the target account. 
+
+### Video
+- [Loom video](https://www.loom.com/share/5137b97127dd46a98a2303f19c66c195?sid=708b2124-7629-473c-ad26-590232d045c3)
+
+### Reflection
+> At this point, take a moment to offer more reflections (should you have any), and list any questions you have either about Frigg, about integration development, about Left Hook, or about anything else that comes to mind when considering working with Left Hook. Commit this additional reflection either to your repo or to the previously created Google Doc
+
+One question that comes to mind is why you chose not to use TypeScript on Frigg, since it's almost a standard for libraries and frameworks nowadays. Have you tried it and decided it wasn't worth it? Or is it something you're planning to add in the future?
+
+# Phase Four
+
