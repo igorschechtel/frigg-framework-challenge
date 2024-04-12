@@ -19,7 +19,7 @@ class AsanaIntegration extends IntegrationBase {
                 description: 'Project Planning',
                 category: 'Project Planning',
                 detailsUrl: 'https://app.asana.com/',
-                icon: 'https://friggframework.org/assets/img/asana-company-icon.svg',
+                icon: 'https://logosandtypes.com/wp-content/uploads/2020/11/Asana.png',
             }
         });
 
@@ -28,7 +28,7 @@ class AsanaIntegration extends IntegrationBase {
         description: 'Project Planning',
         category: 'Project Planning',
         detailsUrl: 'https://asana.app',
-        icon: 'https://friggframework.org/assets/img/asana-company-icon.svg',
+        icon: 'https://logosandtypes.com/wp-content/uploads/2020/11/Asana.png',
     }
 
     static modules = {
@@ -52,13 +52,9 @@ class AsanaIntegration extends IntegrationBase {
 					this.target.api.listWorkspaces(),
 					this.target.api.getUserDetails(),
 				]);
-				console.log('workspaces', JSON.stringify(workspaces, null, 2))
-				console.log('user', JSON.stringify(user, null, 2))
 				const workspaceId = workspaces.data[0].gid;
 				const assigneeId = user.sub;
-        const tasks = await this.target.api.listTasks(workspaceId, assigneeId);
-        console.log(tasks)
-        return tasks
+        return this.target.api.listTasks({workspaceId, assigneeId});
 
     }
 }
